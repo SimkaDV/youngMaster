@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<header class ="header">
+    <div class="headerContent">
+        <h1 class = "name"> Юный Техник</h1>    
+    </div>
+    <div class ="menuHeader headerContent">
+        <a href = "#productsSection "class="logistButton">Товары</a>
+        <a href = "#reviewsSection " class="logistButton" >Отзывы</a>
+        <a href = "#helpSection "  class="logistButton">Помощь</a>
+        <a href = "#contactSection " class="logistButton">Контакты</a>
+    </div>
+    <div class="headerContent">
+        <button class="contactButton" id="contactButton">Связаться с нами</button>
+    </div>
+    <div class ="modelContact" id="modelContact">
+        <div class="modelBlock" id="modelBlock">
+            <form class="contactInputBlock">
+                <button class="close">x</button>
+                <input type="text" placeholder="Ваше имя" class=" helpInput helpBlock">
+                <input type="email" placeholder="Ваш email" class=" helpInput helpBlock">
+                <input type="phone" placeholder="Ваш телефон" class=" helpInput helpBlock">
+                <input type="text" placeholder="Напишите Ваш вопрос" class=" helpInput helpBlock">
+                <button class="helpBlock"> Отправить</button>
+            </form>
+        </div>
+    
+    </div>
+
+</header>    
+    <section class="headerContanierImg">
+        <img src="img\29816d4c5af39aab48cadb03dee06a48.png" alt="" class="headerImg">
+    </section>
+
+    <section class="productsSection" id="productsSection">
+        <h1 class="h1">Лучшие товары от Юного Техника</h1>
+        <h2 class="h2">Широкий выбор современной техники</h2>
+        <div class="productsCard">
+            <div class="productCard">
+                <img src="img\1ac2f55ccb525aa6aeead64dfde85e5e.png" alt="" class="productImg">
+                <h1 class="nameProduct">Смартфон</h1>
+                <h2 class="descriptionProduct">Безграничные возможности в ваших руках</h2>
+                <h1 class="priceProduct">18990</h1>
+                <button class="buttonProduct"> Заказать</button>
+            </div>    
+            <div class="productCard">
+                <img src="img\3e37a89c3c2aa58f0716512984c65c14.png" alt="" class="productImg">
+                <h1 class="nameProduct">Планшет</h1>
+                <h2 class="descriptionProduct">Настоящее мощное устройство для работы и развлечений</h2>
+                <h1 class="priceProduct">29990</h1>
+                <button class="buttonProduct"> Заказать</button>
+            </div>    
+            <div class="productCard" >
+                <img src="img\a46fb6954ab28d9779a44199f9d92df0.png" alt="" class="productImg">
+                <h1 class="nameProduct">Идеальный ноутбук</h1>
+                <h2 class="descriptionProduct">Мощность и стиль в каждой детали</h2>
+                <h1 class="priceProduct">99990</h1>
+                <button class="buttonProduct"> Заказать</button>
+            </div>   
+
+             
+        </div>
+    </section>
+
+    <section class ="reviewsSection" id = "reviewsSection">
+        <h1 class="h1">Отзывы покупателей</h1>
+        
+        
+        <div class="reviewsScroll">
+            <button class="reviewButton reviewButtonLeft" id ="reviewButtonLeft"></button>
+            <div class="reviews" id="reviews">
+                <img src="" alt="" class="photoReview" id="photoReview">
+                <h1 class="nameReview" id="nameReview"></h1>
+                <p class="textReview" id="textRexiew"> </p>
+            </div>
+            <button class="reviewButton reviewButtonRigth" id ="reviewButtonRigth" >&#8594;</button>
+        </div>
+        <div class="dots" id="dots">
+           
+            
+
+        </div>
+        
+    
+    </section>
+
+
+
+
+    <section class="helpSection" id="helpSection">
+        <h1 class="h1">Остались вопросы?</h1>
+        <h2 class="h2">Мы готовы помочь</h2>
+        <form class="helpInputBlock">
+            <input type="text" placeholder="Ваше имя" class=" helpInput helpBlock">
+            <input type="email" placeholder="Ваш email" class=" helpInput helpBlock">
+            <input type="tel" placeholder="Ваш телефон" class=" helpInput helpBlock">
+            <input type="text" placeholder="Напишите Ваш вопрос" class=" helpInput helpBlock">
+            <button class="helpBlock"> Отправить</button>
+        </div>
+    </section>
+    <section class="contactSection" id="contactSection">
+        <h1>Контакты</h1>
+        <h2>Мы всегда рады видеть вас в магазине</h2>
+        <div>
+            <div class="contactBlock">
+                <h1 class="contactName"> Контакты</h1>
+                <h2 class="number contactText"> +7-ХХХ-ХХХ-ХХ-ХХ</h2>
+                <h2 class="email contactText"> xxxxxxx@young-tex.ru</h2>
+                <h2 class="adres contactText"> г.Москва, метро Москва, ул. Пушкина, дом 11</h2>
+
+            </div>
+            <div id="map" class = "map"></div>
+        </div>
+
+    </section>
+    
+<footer>
+       <h1 class="nameFooter"> Юный Техник</h1> 
+       <div>
+            <h2>+7-ХХХ-ХХХ-ХХ-ХХ</h2>
+            <h2>xxxxxxx@young-tex.ru</h2>
+       </div>
+
+</footer> 
+<script src="main.js"></script>   
+</body>
+
+
+
+</html>

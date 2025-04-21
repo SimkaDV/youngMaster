@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    width: 100%;  
+    height: 12vh; 
+    align-items: center;
+    margin-bottom: 5vh;
+    scroll-margin-top: 80px;
+}
+body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    padding: 1vw;
+    background-color: #8C9FE3;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor:pointer;
+
+}
+section{
+    margin-top: 4vh;
+    scroll-margin-top: 80px;
+}
+h1{
+    font-size: 25px;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+h2{
+    color: gray;
+    font-size: 19px;
+    margin-bottom: 7vh;
+    text-align: center;
+
+}
+
+.name{
+    flex-grow: 0;
+    font-size: 4vh;
+    padding-top: 0.4em;
+}
+.menuHeader{
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+    
+}
+.logistButton{
+    margin-left: auto;
+
+}
+
+
+.contactButton{
+    flex-grow: 0;
+    padding: 1vw;
+    background-color: #8C9FE3;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    margin-left: 7vw;
+}
+.headerContanierImg{
+    
+    margin-bottom: 5vh;
+
+}
+
+.headerImg{
+    height: 300px;
+    width: 700px;
+    border-radius: 2em;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.productsSection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.productsCard{
+    display: flex;
+}
+.productCard{
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 2em;
+    width: 28%;
+    padding: 2%;
+    box-sizing: border-box
+
+}
+.productImg{
+    object-fit: cover; 
+    width: 90%;
+    height: 40%;
+    margin: auto;
+    border-radius: 1em;
+}
+.nameProduct{
+    font-size: 100%;
+}
+.descriptionProduct{
+    font-size: 80%;;
+    color: gray;
+}
+
+.reviewsSection{
+    text-align: center;
+}
+.photoReview{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover; 
+
+}
+.reviewsScroll{
+    display: flex; 
+    margin: auto 4vw;
+
+}
+.reviews{
+   margin-left: 10%;
+   margin-right: 10%;
+}
+#reviewSlider {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+.review {
+    transition: all 0.3s ease;
+}
+  
+  .dots {
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ACADB9;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background: #8C9FE3;
+  }
+
+
+.reviewButton{
+    background-color: white;
+    box-shadow:0 0 15px 2px#8C9FE3;
+    border-radius: 50%;
+    height: 30px;
+    width: 80px;
+    margin:auto;
+    color: black;
+    
+}
+.reviewButton:hover{
+    box-shadow:0 0 15px 5px#8C9FE3;
+}
+
+.helpInputBlock{
+    border: 1px solid black;
+    border-radius: 1em;
+    display: block;
+}
+.helpBlock {
+    display: block;
+    margin: 2vh auto ;
+}
+.helpInput{
+    border-radius: 2em;
+    border: 1px solid gray;
+    padding: 0.5em;
+}
+
+
+
+
+.map{
+    height: 15em;
+    width: 100vw;
+    background-color: black;
+    
+}
+.contactBlock{
+    background-color: white;
+    position: absolute;
+    left: 10vw;
+    margin-top: 7vh;  
+    width: 25%;
+    z-index: 1;
+    border-radius: 1em;
+    text-align: left;
+    padding: 1.5em;
+}
+.contactName{
+    text-align: left;
+
+}
+.contactText{
+    font-size: 15px;
+    margin: 0;
+    text-align: left;
+    width: 80%;
+}
+.email{
+    margin-bottom: 2vh;
+}
+
+
+.contactBlockContanier{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+
+}
+
+.modelBlock{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    padding-top: 7em;
+   
+}
+.close{
+    display: flex;
+    justify-self: end;
+}
+.contactInputBlock{
+    
+    margin: auto;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: white;
+}
