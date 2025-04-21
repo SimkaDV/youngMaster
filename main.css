@@ -22,12 +22,13 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 button{
-    padding: 1vw;
+    padding: 20px;
     background-color: #8C9FE3;
     color: white;
     border: none;
     border-radius: 0.5em;
     cursor:pointer;
+    font-size: 25px;
 
 }
 section{
@@ -35,13 +36,13 @@ section{
     scroll-margin-top: 80px;
 }
 h1{
-    font-size: 25px;
+    font-size: 45px;
     margin-bottom: 2vh;
     text-align: center;
 }
 h2{
     color: gray;
-    font-size: 19px;
+    font-size: 35px;
     margin-bottom: 7vh;
     text-align: center;
 
@@ -56,6 +57,7 @@ h2{
     display: flex;
     justify-content: center;
     flex-grow: 2;
+    font-size: 27px;
     
 }
 .logistButton{
@@ -72,6 +74,7 @@ h2{
     border: none;
     border-radius: 0.5em;
     margin-left: 7vw;
+    font-size: 20px;
 }
 .headerContanierImg{
     
@@ -80,8 +83,8 @@ h2{
 }
 
 .headerImg{
-    height: 300px;
-    width: 700px;
+    height: 500px;
+    width: 1200px;
     border-radius: 2em;
     object-fit: cover; 
     object-position: center;
@@ -101,31 +104,32 @@ h2{
     border: 1px solid gray;
     border-radius: 2em;
     width: 28%;
-    padding: 2%;
+    padding: 40px;
     box-sizing: border-box
 
 }
 .productImg{
     object-fit: cover; 
-    width: 90%;
-    height: 40%;
+    width: 300px;
+    height: 200px;
     margin: auto;
     border-radius: 1em;
 }
 .nameProduct{
-    font-size: 100%;
+    font-size: 35px;
 }
 .descriptionProduct{
-    font-size: 80%;;
+    font-size: 27px;
     color: gray;
+    margin-bottom: 20px;
 }
 
 .reviewsSection{
     text-align: center;
 }
 .photoReview{
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     object-fit: cover; 
 
@@ -138,6 +142,7 @@ h2{
 .reviews{
    margin-left: 10%;
    margin-right: 10%;
+   font-size: 25px;
 }
 #reviewSlider {
     max-width: 400px;
@@ -146,9 +151,6 @@ h2{
     font-family: sans-serif;
   }
   
-.review {
-    transition: all 0.3s ease;
-}
   
   .dots {
     margin-top: 10px;
@@ -156,17 +158,18 @@ h2{
   
   .dot {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 35px;
+    height: 18px;
     background: #ACADB9;
-    border-radius: 50%;
-    margin: 0 5px;
+    border-radius: 10%;
+    margin: 0 4px;
     cursor: pointer;
     transition: background 0.3s;
   }
   
   .dot.active {
     background: #8C9FE3;
+    width: 42px;
   }
 
 
@@ -174,14 +177,24 @@ h2{
     background-color: white;
     box-shadow:0 0 15px 2px#8C9FE3;
     border-radius: 50%;
-    height: 30px;
+    height: 70px;
     width: 80px;
-    margin:auto;
-    color: black;
-    
+    margin: auto;
 }
+.left{
+    transform: rotate(180deg);
+
+}
+
 .reviewButton:hover{
     box-shadow:0 0 15px 5px#8C9FE3;
+}
+
+.reviewButtonImg{
+width: 30px;
+height: 30px;
+padding: auto;
+
 }
 
 .helpInputBlock{
@@ -196,14 +209,16 @@ h2{
 .helpInput{
     border-radius: 2em;
     border: 1px solid gray;
-    padding: 0.5em;
+    padding: 25px;
+    width: 300px;
+    font-size: 20px;
 }
 
 
 
 
 .map{
-    height: 15em;
+    height: 350px;
     width: 100vw;
     background-color: black;
     
@@ -218,13 +233,14 @@ h2{
     border-radius: 1em;
     text-align: left;
     padding: 1.5em;
+    
 }
 .contactName{
     text-align: left;
 
 }
 .contactText{
-    font-size: 15px;
+    font-size: 20px;
     margin: 0;
     text-align: left;
     width: 80%;
