@@ -8,7 +8,7 @@ contactButton.addEventListener("click", ()=>{
 })
 closeModelBlock.addEventListener("click", ()=>{
   modelBlock.style.display = "none"
-  
+  console.log(111)
 })
   
 
@@ -55,7 +55,7 @@ const rightBtn = document.getElementById('reviewButtonRigth');
 
 const photoReview = document.getElementById('photoReview')
 const nameReview = document.getElementById('nameReview')
-const textReview = document.getElementById('textRexiew');
+const textReview = document.getElementById('textReview');
 
 
 let iReviews = 0; 
@@ -78,7 +78,8 @@ function apdateReview(iRev){
   photoReview.src = review.image;
   nameReview.textContent = review.name;
   textReview.textContent = review.text;
-  return iRev
+  updateDots()
+  
 }
 
 
@@ -95,20 +96,21 @@ for(let i = 0; i < reviews.length; i++){
   let dot = document.createElement("div")
   dot.className = "dot";
   dot.id = "dot" + i;
-  
+  if (iReviews === i) dot.classList.add('active')
   dot.addEventListener("click", function(){
-    apdateDot(apdateReview(i), i, dot)
-    apdateReview(i)
-    console.log()
-    console.log(i)    
+    iReviews = i
+    updateDots()
+    apdateReview(i) 
   })
   
   dots.appendChild(dot);
 }
 
-function apdateDot(iRev, iDot, dot){
-    if (iRev === iDot) dot.classList.add("active") 
-    if (iRev !== iDot) dot.classList.remove("active")
+function updateDots(){
+   document.querySelectorAll(".dot").forEach((dot, i) => {
+    dot.classList.toggle('active', i === iReviews);
+  });
+    
 }
 
 

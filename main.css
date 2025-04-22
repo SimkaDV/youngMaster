@@ -223,17 +223,20 @@ padding: auto;
 
 
 
-.map{
+.mapBlock{
     height: 350px;
     width: 100vw;
-    background-color: black;
-    
+}
+.imgMap{
+    object-fit: cover; 
+    height: 350px;
+    width: 100vw;
 }
 .contactBlock{
     background-color: white;
     position: absolute;
     left: 10vw;
-    margin-top: 7vh;  
+    margin-top: 40px;  
     width: 25%;
     z-index: 1;
     border-radius: 1em;
