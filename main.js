@@ -4,11 +4,11 @@ const contactButton = document.getElementById("contactButton")
 
 contactButton.addEventListener("click", ()=>{
     modelBlock.style.display = "block"
-    console.log(111)
+    
 })
 closeModelBlock.addEventListener("click", ()=>{
   modelBlock.style.display = "none"
-  console.log(111)
+  
 })
   
 
@@ -78,7 +78,7 @@ function apdateReview(iRev){
   photoReview.src = review.image;
   nameReview.textContent = review.name;
   textReview.textContent = review.text;
-  console.log(222)
+  return iRev
 }
 
 
@@ -95,16 +95,21 @@ for(let i = 0; i < reviews.length; i++){
   let dot = document.createElement("div")
   dot.className = "dot";
   dot.id = "dot" + i;
+  
   dot.addEventListener("click", function(){
-    
-    apdateReview(i)    
+    apdateDot(apdateReview(i), i, dot)
+    apdateReview(i)
+    console.log()
+    console.log(i)    
   })
   
   dots.appendChild(dot);
 }
 
-
-
+function apdateDot(iRev, iDot, dot){
+    if (iRev === iDot) dot.classList.add("active") 
+    if (iRev !== iDot) dot.classList.remove("active")
+}
 
 
 
